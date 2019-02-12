@@ -5,6 +5,10 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        @yield('content')
+        @include('inc.navbar')
+        <div class="container" style="margin-top:80px">
+
+            @yield('content')
+        </div>
     </body>
 </html>
