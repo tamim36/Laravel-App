@@ -21,6 +21,8 @@ Route::get('/about', 'PagesController@about');
 
 Route::get('/services','PagesController@services');
 
+Route::resource('posts', 'PostsController');
+
 /*Route::get('/users/{id}/{name}/{city}', function($id, $name, $city){
     return 'this is user is '.$id.' and the name is '.$name.' and live in '.$city ;
 });*/
