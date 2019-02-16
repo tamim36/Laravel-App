@@ -26,3 +26,7 @@ Route::resource('posts', 'PostsController');
 /*Route::get('/users/{id}/{name}/{city}', function($id, $name, $city){
     return 'this is user is '.$id.' and the name is '.$name.' and live in '.$city ;
 });*/
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

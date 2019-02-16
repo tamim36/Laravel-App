@@ -5,9 +5,16 @@
 
     @if (count($posts)>0)
         @foreach ($posts as $post)
-            <div class="well" style="height:100px; border:1px grey dotted; border-radius:15px;padding:10px;">
-                <h3 style="margin:0px;"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                <small>written at {{$post->created_at}}</small>
+        <div class="well">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                            <h3 style="margin:0px;"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
+                            <small>written at {{$post->created_at}}</small>
+                    </div>
+                </div>
             </div>
         @endforeach
         {{$posts->links()}}

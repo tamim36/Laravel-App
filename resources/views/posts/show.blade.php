@@ -4,6 +4,8 @@
     <a href="/posts" class="btn btn-primary">Go Back</a>
 
     <h1 style="font-weight:bold;">{{$post->title}}</h1>
+    <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
+    <br> <br> <br>
     <small>written at {{$post->created_at}}</small>
 
     <div class="well" style="padding:30px;">
